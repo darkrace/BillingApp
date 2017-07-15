@@ -1,0 +1,679 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Sweets House</title>
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Smart Career Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!--bootstrap-css-->
+<link href="/static/css/font-awesome.css" rel="stylesheet"> <!--font-awesome-css-->
+<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" /><!--flexslider-css-->
+<link href="/static/css/circles.css" rel="stylesheet" type="text/css" media="all" /><!--skill-circles-->
+<link href="/static/css/style.css"rel="stylesheet" type="text/css" media="all" /><!--style-sheet-->
+<link href="/static/css/aos.css" rel="stylesheet prefetch" type="text/css" media="all" /><!--Animation-effects-css-->
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+<!--//fonts-->
+
+</head>
+<body>
+<!--banner start here-->
+<div class="banner" id="home">
+<div class="agileinfo-dot">
+   <div class="header">
+		   <div class="header-main">
+			 <div class="header-top-agileits">
+		   	 <div class="container">
+				<div class="w3l-social" data-aos="fade-right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"> </div>
+				</div>
+			</div>
+		   	 <div class="container">
+			<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a  href="index.html">Sweets House</a></h1>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse cl-effect-13" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html" class="active scroll">Home</a></li>
+							<li><a href="#services" class="scroll">Record</a></li>
+							<li><a href="#team" class="scroll">Product</a></li>
+							<li><a href="#gallery" class="scroll">Order</a></li>
+							<li><a href="#contact" class="scroll">Contact</a></li>
+						</ul>
+
+					</div>
+
+					<div class="w3ls_search">
+													<div class="cd-main-header">
+														<ul class="cd-header-buttons">
+															<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+														</ul> <!-- cd-header-buttons -->
+													</div>
+													<div id="cd-search" class="cd-search">
+														<form action="#" method="post">
+															<input name="Search" type="search" placeholder="Click enter after typing">
+														</form>
+													</div>
+												</div>
+					
+
+					<div class="clearfix"> </div>	
+				</nav>
+		   </div>
+		   </div>
+<div class="container">
+		   <div class="banner-bottom">
+		   	   <section class="slider">
+				 <div class="flexslider">
+					<ul class="slides">
+					  <li>
+					  	<div class="banner-bottom-text">
+					  			<h3>Get around the clock support from payroll experts</h3>
+						  
+					 	</div>
+					  </li>
+					  <li>
+					  	<div class="banner-bottom-text">
+					  		<h3>Run payroll in just a few easy steps</h3>
+					 	</div>
+					  </li>
+					  <li>
+					  	<div class="banner-bottom-text">
+					  			<h3>Get around the clock support from payroll experts</h3>
+						  
+					 	</div>
+					  </li>
+					  <li>
+					  	<div class="banner-bottom-text">
+					  		<h3>Run payroll in just few easy steps</h3>
+					 	</div>
+					  </li>			  
+				    </ul>
+				 </div>
+				 <div class="clearfix"> </div>
+		      </section>
+			<div class="thim-click-to-bottom">
+				<a href="#about" class="scroll">
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</a>
+			</div>
+			
+		   </div>
+		</div>
+	</div>
+</div>
+</div>
+<!--banner end here-->
+	<!--banner bottom-->
+
+<!--//banner bottom-->
+
+<!--services -->
+<div class="services-agileits" id="services">
+	<div class="container">
+	<div class="tittle-agileinfo">
+		<span>02</span>
+		<h3>Customer Record</h3>
+		<p >Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+		<section>
+  <!--for demo wrap-->
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Order</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+      {% for item in a %}
+        <tr>
+          <td>{{item.Name}}</td>
+          <td>{{item.Product}}</td>
+          <td>{{item.Quantity}}</td>
+          <td>{{item.Price}}</td>
+          <td>{{item.Order}}</td>
+          <td>{{item.Date}}</td>
+        </tr>
+  {% endfor %}
+      </tbody>
+    </table>
+  </div> 
+</section>
+
+
+<!-- follow me template -->
+
+			
+		</div>
+	</div>
+</div>
+
+<!-- //services -->
+<!-- Team -->
+<div class="team" id="team">
+		<div class="container">
+		<div class="tittle-agileinfo">
+			<span>03</span>
+			<h3>Our marvellous Products</h3>
+			<p >Best Quality with Great tast.</p>
+		</div>
+		</div>
+			<div class="agile_team_grids">
+				<div class="col-md-3 agile_team_grid" data-aos="zoom-in">
+					<div class="view view-sixth">
+						<img src="/static/images/t1.jpg" alt=" " class="img-responsive">
+						<div class="mask">
+							<h5>Jelly</h5>
+							<p>Make with orignal fruits and best quality flavors.</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 agile_team_grid" data-aos="zoom-in">
+					<div class="view view-sixth">
+						<img src="/static/images/t2.jpg" alt=" " class="img-responsive">
+						<div class="mask">
+							<h5>Lolipop</h5>
+							<p>Rainbow chainies lolipop. chrunchi candy.</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 agile_team_grid" data-aos="zoom-in">
+					<div class="view view-sixth">
+						<img src="/static/images/t3.jpg" alt=" " class="img-responsive">
+						<div class="mask">
+							<h5>Toffy</h5>
+							<p>Soft candy made with milk and butter.</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 agile_team_grid" data-aos="zoom-in">
+					<div class="view view-sixth">
+						<img src="/static/images/t4.jpg" alt=" " class="img-responsive">
+						<div class="mask">
+							<h5>Choclates</h5>
+							<p>Best Quality choclate with nuts and cake.</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+	</div>
+	<!-- //Team -->
+<!-- Stats -->
+							<div class="w3ls_agile_circle_progress agile_info_shadow" id="skills">
+								<div class="cir_agile_info ">
+									  <div class="skill-grids">
+											<div class="skills-grid text-center" >
+												<div class="circle" id="circles-1"></div>
+												<p>A percentage of individual cases that we take yearly, on average.</p>
+											</div>
+											<div class="skills-grid text-center">
+												<div class="circle" id="circles-2"></div>
+												<p>A share of commercial/business cases that we process yearly</p>
+											</div>
+											<div class="skills-grid text-center">
+												<div class="circle" id="circles-3"></div>
+												
+												<p>The number of returning customers, over the period of last 10 years</p>
+											</div>
+											<div class="skills-grid text-center">
+												<div class="circle" id="circles-4"></div>
+												<p>A percentage of individual cases that we take yearly, on average.</p>
+											</div>
+												
+								
+				
+										 <div class="clearfix"></div>
+										
+								</div>
+							</div>
+						</div>
+
+	<!-- //Stats -->
+
+<!-- gallery -->
+	<div class="gallery" id="gallery">
+	
+	<div class="container">
+		<div class="tittle-agileinfo">
+			<span>08</span>
+			<h3>Billing</h3>
+			<p >Add order or check products rates.</p>
+		</div>
+			<div class="agile-contact-grids">
+					<div class="col-md-6 address-grid" data-aos="flip-left">
+						<div class="col-md-6 contact-form" data-aos="flip-up">
+						<h4>CHECK AMOUNT</h4>
+						<form >
+						
+							<div class="styled-input">
+								<select name="Product" id="Products">
+								  <option value="Jelly">Jelly</option>
+								  <option value="Lollipop">Lollipop</option>
+								  <option value="Toffy">Toffy</option>
+								  <option value="Choclate">Choclate</option>
+								</select>
+							</div>
+							<div class="styled-input">
+								<input type="text" name="Quantity" id="Quantity" placeholder="" required=""> 
+								<label>Packet Quantity</label>
+								<span></span>
+							</div> 
+							
+							<input type="button" onclick="changeValue()" value="CHECK" >
+							
+						</form>
+						<h4 id="p">Price + Tax   = Total Price =</h4>
+						<script>
+								function changeValue(){
+								var P = document.getElementById('Products');
+								var R = document.getElementById('p');
+								if (P.value  == "Toffy"){
+		     						R.innerHTML= "Total Price = Price + Tax  = "  + document.getElementById('Quantity').value*150  ;
+								}
+								else if (P.value == "Jelly"){
+		     						R.innerHTML= "Total Price = Price + Tax  ="  + document.getElementById('Quantity').value*200 ;
+								}
+								else if (P.value  == "Lollipop"){
+		     						R.innerHTML= "Total Price = Price + Tax  ="  + document.getElementById('Quantity').value*250  ;
+								}
+								else {
+		     						R.innerHTML= "Total Price = Price + Tax  ="  + document.getElementById('Quantity').value*350  ;
+								}
+		    } 
+							</script>
+					</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 contact-form" data-aos="flip-up">
+						<h4>ADD ORDER</h4>
+						<form action="/Item_detail" method="post" accept-charset="utf-8">
+						{% csrf_token %}
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="Name" id="Name" placeholder="" required="">
+								<label>Customer Name</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<select name="Product" id="Product">
+								  <option value="Jelly">Jelly</option>
+								  <option value="Lollipop">Lollipop</option>
+								  <option value="Toffy">Toffy</option>
+								  <option value="Choclate">Choclate</option>
+								</select>
+							</div>
+							<div class="styled-input">
+								<input type="text" name="Quantity" id="Quantity" placeholder="" required="">
+								<label>Packect Quantity</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="Date" name="Date" id="Date" placeholder="" required="">
+								
+								<span></span>
+							</div>	 
+							<input type="submit" value="Give Order">
+						</form>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //gallery --> 
+
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+		<div class="tittle-agileinfo">
+			<span>06</span>
+			<h3>Customers feedback</h3>
+			<p ></p>
+		</div>
+			<div class="w3_testimonials_grids">
+				<div id="slideshow" class="disabled">
+					<button class="previous"><b>« Previous</b></button>
+					<button class="next"><b>Next »</b></button>
+					<div class="strip">
+						<div class="slide sticky">
+							<div class="col-md-6 agileinfo_team_grid" data-aos="zoom-in">
+								<div class="agileinfo_team_grid1">
+									<div class="test-top-wthree">
+									<img src="images/t1.jpg" alt="" />
+										<div class="test-right-wthree">
+											<h6>Peter</h6>
+											<p>Buisness Man, </p>
+										</div>
+									<div class="clearfix"> </div>
+									</div>
+									<div class="test-bottom-w3-agile">
+										<i class="fa fa-quote-left" aria-hidden="true"></i>
+										<p class="para-agileits-w3layouts">Masagni dolores eoquie int Basmodi temporant, ut laboreas dolore magnam aliquam kuytase uaeraquis autem vel eum iure reprehend.Unicmquam eius, Basmodi temurer sehsMunim.Masagni dolores eoquie int Basmodi temporant.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 agileinfo_team_grid" data-aos="zoom-in">
+								<div class="agileinfo_team_grid1">
+									<div class="test-top-wthree">
+									<img src="images/t2.jpg" alt="" />
+										<div class="test-right-wthree">
+											<h6>Liza Brent</h6>
+											<p>Lorem ipsum dolor sit amet, </p>
+										</div>
+									<div class="clearfix"> </div>
+									</div>
+									<div class="test-bottom-w3-agile">
+										<i class="fa fa-quote-left" aria-hidden="true"></i>
+										<p class="para-agileits-w3layouts">Masagni dolores eoquie int Basmodi temporant, ut laboreas dolore magnam aliquam kuytase uaeraquis autem vel eum iure reprehend.Unicmquam eius, Basmodi temurer sehsMunim.Masagni dolores eoquie int Basmodi temporant.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="col-md-6 agileinfo_team_grid" data-aos="zoom-in">
+								<div class="agileinfo_team_grid1">
+									<div class="test-top-wthree">
+									<img src="images/t3.jpg" alt="" />
+										<div class="test-right-wthree">
+											<h6>Leslie gross</h6>
+											<p>Lorem ipsum dolor sit amet, </p>
+										</div>
+									<div class="clearfix"> </div>
+									</div>
+									<div class="test-bottom-w3-agile">
+										<i class="fa fa-quote-left" aria-hidden="true"></i>
+										<p class="para-agileits-w3layouts">Masagni dolores eoquie int Basmodi temporant, ut laboreas dolore magnam aliquam kuytase uaeraquis autem vel eum iure reprehend.Unicmquam eius, Basmodi temurer sehsMunim.Masagni dolores eoquie int Basmodi temporant.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 agileinfo_team_grid" data-aos="zoom-in">
+								<div class="agileinfo_team_grid1">
+									<div class="test-top-wthree">
+									<img src="images/t4.jpg" alt="" />
+										<div class="test-right-wthree">
+											<h6>Kimberly Barker</h6>
+											<p>Lorem ipsum dolor sit amet, </p>
+										</div>
+									<div class="clearfix"> </div>
+									</div>
+									<div class="test-bottom-w3-agile">
+										<i class="fa fa-quote-left" aria-hidden="true"></i>
+										<p class="para-agileits-w3layouts">Masagni dolores eoquie int Basmodi temporant, ut laboreas dolore magnam aliquam kuytase uaeraquis autem vel eum iure reprehend.Unicmquam eius, Basmodi temurer sehsMunim.Masagni dolores eoquie int Basmodi temporant.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+<!-- newsletter -->
+<div class="agileits_w3layouts newsletter">
+	<div class="container">
+		<div class="col-md-6 news-left" data-aos="fade-up">
+			<h3 class="f-w3ls">Follow us on</h3>
+			<div class="follow-left-agileits">
+			
+			</div>
+			<div class="follow-right-agileinfo">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><span>Google</span></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-6 news-right" data-aos="fade-up">
+		<h3>Subscribe Now</h3>
+		<p>Masagni dolores eoquie int Basmodi temporant, ut laboreas dolore magnam aliquam kuytase uaeraquis</p>
+			<form action="#" method="post">
+				<input class="email" type="email" name="Email" placeholder="Email" required="">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- //newsletter -->
+<!-- map -->
+	<div class="map">
+		<ul class="faq">
+			<li class="item1"><a href="#">Location<span class="glyphicon glyphicon-menu-down"></span></a>
+				<ul>
+					<li class="subitem1">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.1548130895044!2d0.05114511582717095!3d51.49202647963261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8f3bf9761d7%3A0xd91e74f18e5b1522!2sFrances+St%2C+Woolwich%2C+London+SE18+5JU%2C+UK!5e0!3m2!1sen!2sin!4v1493883907321"></iframe>
+					</li>										
+				</ul>
+			</li>
+		</ul>
+	</div>
+<!-- //map -->
+
+<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+		<div class="tittle-agileinfo">
+			<span>08</span>
+			<h3>Contact Info</h3>
+			<p >Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+		</div>
+			<div class="agile-contact-grids">
+					<div class="col-md-6 address-grid" data-aos="flip-left">
+						<h4>Our Address</h4>
+						<ul class="w3_address">
+							<li><span>Address 1</span>Frances Street, London, United Kingdom</li>
+							<li><span>Phone</span>+1234 567 567</li>
+							<li><span>Address 2</span>Frances St, Woolwich, London SE18, UK</li>
+							<li><span>Email</span><a href="mailto:info@example.com">info@example.com</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 contact-form" data-aos="flip-up">
+						<h4>Contact Form</h4>
+						<form action="#" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="Name" placeholder="" required="">
+								<label>Name</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="email" name="Email" placeholder="" required=""> 
+								<label>Email</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="Subject" placeholder="" required="">
+								<label>Subject</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<textarea name="Message" placeholder="" required=""></textarea>
+								<label>Message</label>
+								<span></span>
+							</div>	 
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!--footer-->
+			<div class="copy">
+		        <p>© 2017 Sweets House . All Rights Reserved | Design by <a href="http://w3layouts.com/">Dark</a> </p>
+		    </div>
+			<!--/footer -->
+		</div>
+	</div>
+	<!-- //contact -->
+
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+<!--search-bar-->
+		<script src="/static/js/main.js"></script>	
+<!--//search-bar-->
+<!-- FlexSlider -->
+				  <script defer src="/static/js/jquery.flexslider.js"></script>
+				  <script type="text/javascript">
+					$(function(){				 
+					});
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+<!-- FlexSlider -->
+<!-- clients-slider-script -->
+				<script src="/static/js/slideshow.min.js"></script>
+				<script src="/static/js/launcher.js"></script>
+<!-- //clients-slider-script -->
+<!-- /circle-->
+	 <script type="text/javascript" src="/static/js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#ffffff', '#fd9426'], ['#ffffff', '#fc3158'],['#ffffff', '#53d769'], ['#ffffff', '#147efb']
+									];
+								for (var i = 1; i <= 7; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 30 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+	<!-- //circle -->
+	<!-- for-Map -->
+		<script type="text/javascript">
+			$(function() {
+			
+				var menu_ul = $('.faq > li > ul'),
+					   menu_a  = $('.faq > li > a');
+				
+				menu_ul.hide();
+			
+				menu_a.click(function(e) {
+					e.preventDefault();
+					if(!$(this).hasClass('active')) {
+						menu_a.removeClass('active');
+						menu_ul.filter(':visible').slideUp('normal');
+						$(this).addClass('active').next().stop(true,true).slideDown('normal');
+					} else {
+						$(this).removeClass('active');
+						$(this).next().stop(true,true).slideUp('normal');
+					}
+				});
+			
+			});
+		</script>
+<!-- //for-Map -->
+<script src="/static/js/jzBox.js"></script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+<!-- Animation-effect -->
+<script src='/static/js/aos.js'></script>
+<script src="/static/js/aosindex.js"></script>
+<!-- //Animation-effect -->
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<script src="/static/js/bootstrap.js"></script>
+
+</body>
+</html>
